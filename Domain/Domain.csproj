@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Dtos\Responses\Students\" />
+      <Folder Include="Dtos\" />
     </ItemGroup>
 
     <ItemGroup>

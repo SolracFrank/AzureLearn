@@ -9,11 +9,9 @@ public class UnitOfWork : IUnitOfWork
 
     public UnitOfWork(IRepository<Student> studentsRepository, ApplicationDbContext context)
     {
-        StudentsRepository = studentsRepository;
         _context = context;
     }
 
-    public IRepository<Student> StudentsRepository { get; }
 
     public async Task<bool> SaveChangesAsync(CancellationToken cancellationToken)
     {
