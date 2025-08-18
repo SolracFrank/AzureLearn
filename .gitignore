@@ -2,6 +2,11 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,rider,aspnetcore,visualstudiocode,dotenv
 
 
+### Scripts SQL ###
+# Ignore SQL scripts that are used to create or update the database schema.
+# These scripts are typically used in development and should not be committed to the repository.
+sql-server-scripts/
+
 ### ASPNETCore ###
 **/Properties/launchSettings.json
 **/launchSettings.json
