@@ -1,7 +1,10 @@
+using Domain.Entities;
+
 namespace Infrastructure.Repositories.Interfaces;
 
 public interface IUnitOfWork
 {
-    IRepository<Student> StudentsRepository { get; } 
+    public IRepository<Product> ProductRepository { get; }
+    public IRepository<Category> CategoryRepository { get; }
     Task<bool> SaveChangesAsync(CancellationToken cancellationToken);
 }
